@@ -101,10 +101,14 @@ public class TicTacToe implements ActionListener {
 
     public void checkOfWinner() {
         //if player 1 wins
-        if ((buttons[0].getText().equals("X")) && (buttons[1].getText().equals("X")) && (buttons[2].getText().equals("X"))) {
+        if (
+                (buttons[0].getText().equals("X")) && (buttons[1].getText().equals("X")) && (buttons[2].getText().equals("X"))
+        ) {
             firstPlayerWins(0, 1, 2);
         }
-        if ((buttons[3].getText().equals("X")) && (buttons[4].getText().equals("X")) && (buttons[5].getText().equals("X"))) {
+        if (
+                (buttons[3].getText().equals("X")) && (buttons[4].getText().equals("X")) && (buttons[5].getText().equals("X"))
+        ) {
             firstPlayerWins(3, 4, 5);
         }
         if (
